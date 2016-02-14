@@ -7,7 +7,7 @@ It's just a skeleton of what I call "Next-generation game server". But it's a ru
 
 I started with a chat application scenario, but you can simply modify it to match the need of any realtime game server, or even general realtime server, just by replacing the "broadcast" method with your own "ProcessPacket" method.
 
-It's both simple enough and complete enough to demonstrate the next-generation network programs, which are expected to have the feature of --
+It's both simple enough and complete enough to demonstrate the next-generation network programs, which are expected to have at least the features of -- 
 
 ## Feature
 
@@ -17,7 +17,7 @@ It's both simple enough and complete enough to demonstrate the next-generation n
 
 ## Detailed Information
 
-You can find a even simpler chat server on:
+You can find an even simpler chat server on:
 
 [https://gist.github.com/drewolson/3950226](https://gist.github.com/drewolson/3950226)
 
