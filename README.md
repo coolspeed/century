@@ -19,7 +19,7 @@ It's both simple enough and complete enough to demonstrate the next-generation n
 
 `century.go` is the main server source file.
 
-It contains a benchmarker named `chat_bencher.go`.
+It contains a benchmarker named `chat_bench.go`.
 
 ## 
 
