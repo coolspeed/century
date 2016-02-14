@@ -15,14 +15,6 @@ It's both simple enough and complete enough to demonstrate the next-generation n
 * High concurrency
 * (Automatic) High scalability, especially on many-core computers. (Think of 64-core computers, as much as 4-core ones.)
 
-## Structure
-
-`century.go` is the main server source file.
-
-It contains a benchmarker named `chat_bench.go`.
-
-## 
-
 ## Detailed Information
 
 You can find a even simpler chat server on:
@@ -50,7 +42,63 @@ Q: Why a chat server?
 
 A: Many such kinds of server frameworks choose chat server to demo usage, such as Boost.asio, Node.js, [Pomelo distributed game server](https://github.com/NetEase/pomelo), etc.
 
+## Build and Run
 
+1) First, you need to install `golang`, of course:
+
+Download it from [https://golang.org/dl/](https://golang.org/dl/), or install go via your package management tool:
+
+For Ubuntu:
+
+```
+sudo apt-get install golang
+```
+
+For Mac OS X:
+
+```
+brew install go
+```
+
+2) Now, just build.
+
+`cd` into the repo directory.
+
+To build the server, execute:
+
+```
+go build century.go
+```
+
+To build the benchmarker, execute:
+
+```
+go build chat_bench.go
+```
+
+3) Run
+
+3.1 Run the chat server:
+
+```
+./century
+```
+
+3.2 Run the chat client:
+
+`Client`: You can use `telnet` as the client:
+
+```
+telnet localhost 6666 
+```
+
+type anything.
+
+4) Bench
+
+```
+./chat_bencher
+```
 
 ## Benchmark Result
 
