@@ -43,7 +43,7 @@ func NewSession(sid int, chatRoom *ChatRoom, connection net.Conn) *Session {
 		killSocketWriterGoroutine: make(chan bool),
 //		sessionMutex: 
 	}
-	fmt.Println("A new Session instance created. sid=", sid)
+	fmt.Println("A new session created. sid=", sid)
 	return session
 }
 
@@ -122,7 +122,7 @@ func (session *Session) LeaveAndDelete() {
 	session.killRoomConnGoroutine <- true
 	
 	// resource: connection to chatRoom
-	// "many in, one out" 형태의 'chatRoom'의(!) channel 이기에 지워야할 채털(RoomConn)이 사실은 존재하지 않는다.
+	// "many in, one out" 형태의 'chatRoom'의(!) channel 이기에 지워야할 채널(RoomConn)이 사실은 존재하지 않는다. (위에서) 해당 goroutine 지워줬으니 끝.
 }
 
 
@@ -209,7 +209,7 @@ func main() {
 
 	chatRoom := NewChatRoom()
 	// listen
-	chatRoom.Listen()	
+	chatRoom.Listen()
 	fmt.Println("chatRoom started to listen.")
 
 	for {
