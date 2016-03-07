@@ -32,6 +32,8 @@ If you are looking for a "real" golang game server, you may find the following r
 
 (Both are described in **Chinese only**.)
 
+* [leaf](https://github.com/name5566/leaf)
+
 And also less mature (IMO) one:
 
 * [go4game](https://github.com/kasworld/go4game)
