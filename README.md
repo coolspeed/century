@@ -99,7 +99,7 @@ type anything.
 4) Bench
 
 ```
-./chat_bencher
+./chat_bench
 ```
 
 ## Benchmark Result
